@@ -56,3 +56,19 @@ li:hover {
   background-color: #e9ecef;
   cursor: pointer;
 }
+
+#task {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
