@@ -29,6 +29,14 @@ function App() {
   };
 */
 
+  const deleteTask = (taskToDelete) => {
+    setTodoList(
+      todoList.filter((task) => {
+        return task !== taskToDelete;
+      })
+    );
+  };
+
   return (
     <div className="App">
       <h1>Todo List</h1>
@@ -50,7 +58,7 @@ function App() {
           return (
             <div id="task">
               <li key={key}> {val}</li>
-              <button>Delete</button>
+              <button onClick={() => deleteTask(val)}>Delete</button>
             </div>
           );
         })}
